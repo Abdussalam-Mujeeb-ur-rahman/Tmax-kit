@@ -1,0 +1,38 @@
+body {
+  background: url("background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main {
+  min-height: 100vh;
+}
+
+#card {
+  background: url("background.png");
+  background-size: 300%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, .5);
+  background-blend-mode: color;
+
+}
+
+
+ion-icon:not(#builder) {
+  font-size: 100px;
+  color: white;
+}
+
+.col-sm {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+p {
+  color: white;
+}

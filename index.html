@@ -7,17 +7,12 @@
   <title>Tmax Kit</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
-  <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-      />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 </head>
 
 <body>
-  
-  <main class="container-fluid d-flex justify-content-center align-items-center">
+
+  <main id="kit" class="container-fluid d-flex justify-content-center align-items-center">
     <div>
       <h1 class="h1 text-center text-white">Tmax Kit</h1>
       <p class="text-center text-white">TEST OUR TOOLS</p>
@@ -51,16 +46,99 @@
           </div>
         </div>
       </div><br />
-      <p class="text-center">Meet our builders <ion-icon name="person-outline" id="builder"></ion-icon></p>
     </div>
   </main>
 
-<script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-      ></script>
-      <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+  <!--the builders-->
+  <div id="accordion">
+    <div id="card">
+      <div class="card-header">
+        <a href="#builders" data-bs-toggle="collapse" class="btn text-white text-center">Meet our builders<ion-icon name="person-outline" class="small"></ion-icon></a>
+      </div>
+      <div id="builders" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body container-fluid d-flex justify-content-center align-items-center flex-wrap">
+          <div class="card shadow">
+            <div class="card-header">
+              <h3>KELLY</h3>
+            </div>
+            <img src="kelly.png" alt="builder" class="card-img-top  rounded-circle">
+            <div class="card-body">
+              <h4 class="card-title text-dark">Inioluwa Tunmishe</h4>
+              <p class="card-text text-dark">A young frontend developer, tutored by T-max program, also a student of Federal College Of Education (Technical), School Of Science, Biology Integrated Science, to be precise </p>
+              <div class="d-flex align-items-center flex-wrap col-gap-10 card-footer">
+                <a><ion-icon name="logo-twitter" class="small"></ion-icon></a> <a><ion-icon name="logo-whatsapp" class="small"></ion-icon></a><a><ion-icon name="logo-linkedin" class="small"></ion-icon></a>
+                <a><ion-icon name="logo-github" class="small"></ion-icon></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow">
+            <div class="card-header">
+              <h3>EMINENT</h3>
+            </div>
+            <img src="eminent.png" alt="builder" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title text-dark">Oyeleke Emmanuel</h4>
+              <p class="card-text text-dark">A young frontend developer, tutored by T-max program, also a student of Federal College Of Education (Technical), School Of Science, to be precise. He is a UI/UX designer</p>
+              <div class="d-flex align-items-center flex-wrap col-gap-10 card-footer">
+                <a href="https://www.facebook.com/profile.php?id=100074856589792&mibextid=ZbWKwL" class="card-link"><ion-icon name="logo-facebook" class="small"></ion-icon></a> <a href="https://twitter.com/Oyelekeayo27?t=dDWVmn7HhuWsOZ4QW2TWHA&s=09"><ion-icon name="logo-twitter" class="small"></ion-icon></a>
+                <a href="https://api.whatsapp.com/send?phone=+2348058330075"><ion-icon name="logo-whatsapp" class="small"></ion-icon></a><a href="https://www.linkedin.com/in/oyeleke-emmanuel-100242243"><ion-icon name="logo-linkedin" class="small"></ion-icon></a>
+                <a href="https://github.com/UnixCreate001"><ion-icon name="logo-github" class="small"></ion-icon></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow">
+            <div class="card-header">
+              <h3>HOPEWELL</h3>
+            </div>
+            <img src="abdulwarith.png" alt="builder" class="card-img-top rounded-circle">
+            <div class="card-body">
+              <h4 class="card-title text-dark">Kolade wariz</h4>
+              <p class="card-text text-dark">A young front end developer, tutored by T-max program, I am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience</p>
+              <div class="d-flex align-items-center flex-wrap col-gap-10 card-footer">
+                <a href="https://twitter.com/warithes/status/1630970248126951424?s=12"><ion-icon name="logo-twitter" class="small"></ion-icon></a> <a><ion-icon name="logo-whatsapp" class="small"></ion-icon></a><a><ion-icon name="logo-linkedin" class="small"></ion-icon></a>
+                <a href="https://github.com/Moyoeq11"><ion-icon name="logo-github" class="small"></ion-icon></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow">
+            <div class="card-header">
+              <h3>ALLAHISRABB</h3>
+            </div>
+            <img src="abdussalam.png" alt="builder" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title text-dark">Abdussalam Mujeeb-ur-rahman</h4>
+              <p class="card-text text-dark">A young frontend developer, tutored by T-max program, also a student of Federal College Of Education (Technical), School Of Science, to be precise.</p>
+              <div class="d-flex align-items-center flex-wrap col-gap-10 card-footer">
+                <a href="https://cv1.mujeeburrahman.repl.co/" class="card-link">Portfolio</a> <a href="https://twitter.com/allahisrabb?t=nIRArWbqXrxT3qGEW2NR-g&s=09"><ion-icon name="logo-twitter" class="small"></ion-icon></a> <a href="https://wa.me/message/7E7JB4IMW74NK1"><ion-icon name="logo-whatsapp" class="small"></ion-icon></a><a href="https://www.linkedin.com/in/mujeeb-ur-rahman-abdussalam-67806b208"><ion-icon name="logo-linkedin" class="small"></ion-icon></a>
+                <a href="https://github.com/Abdussalam-Mujeeb-ur-rahman/"><ion-icon name="logo-github" class="small"></ion-icon></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow">
+            <div class="card-header">
+              <h3>EMINENT</h3>
+            </div>
+            <img src="eminent.png" alt="builder" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title text-dark">Oyeleke Emmanuel</h4>
+              <p class="card-text text-dark">A young frontend developer, tutored by T-max program, also a student of Federal College Of Education (Technical), School Of Science, to be precise. He is a UI/UX designer</p>
+              <div class="d-flex align-items-center flex-wrap col-gap-10 card-footer">
+                <a href="#" class="card-link">Portfolio</a> <a href="#"><ion-icon name="logo-twitter" class="small"></ion-icon></a> <a><ion-icon name="logo-whatsapp" class="small"></ion-icon></a><a href="#"><ion-icon name="logo-linkedin" class="small"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-github" class="small"></ion-icon></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
