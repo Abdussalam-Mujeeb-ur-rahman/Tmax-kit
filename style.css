@@ -6,8 +6,9 @@ body {
   background-attachment: fixed;
 }
 
-main {
-  min-height: 100vh;
+#kit {
+  min-height: 90vh;
+  margin-bottom: 200px;
 }
 
 #card {
@@ -17,13 +18,22 @@ main {
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, .5);
   background-blend-mode: color;
+  transition: all 1s;
+}
 
+#card:hover{
+  background-color: rgba(0, 0, 0, .7)
 }
 
 
-ion-icon:not(#builder) {
+ion-icon:not(.small) {
   font-size: 100px;
   color: white;
+  transition: all .3s;
+}
+
+ion-icon:hover{
+  color: lightblue;
 }
 
 .col-sm {
@@ -36,3 +46,34 @@ ion-icon:not(#builder) {
 p {
   color: white;
 }
+
+
+#builders > .card-body{
+  row-gap: 50px; column-gap: 50px;
+}
+
+#builders > .card-body > .card{
+  max-width: 350px;
+  transform: scale(1);
+  transition: all .5s;
+}
+
+#builders > .card-body > .card:hover{
+  transform: scale(1.05);
+  background-color: lightblue;
+}
+
+#builders .small{
+  font-size: 25px;
+}
+
+.col-gap-10 {
+  column-gap: 10px;
+}
+
+img{
+  max-height: 300px;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
