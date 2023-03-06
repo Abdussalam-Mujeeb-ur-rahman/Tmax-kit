@@ -11,17 +11,18 @@ body {
   margin-bottom: 200px;
 }
 
-#card {
+.cardCss, #cardCss {
   background: url("background.png");
-  background-size: 300%;
+  background-size: 300% ;
   background-position: center;
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, .5);
   background-blend-mode: color;
   transition: all 1s;
+  position: relative;
 }
 
-#card:hover{
+.cardCss:hover, #cardCss{
   background-color: rgba(0, 0, 0, .7)
 }
 
