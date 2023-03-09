@@ -1,0 +1,13 @@
+.mx-auto{
+    max-width: 400px;
+}
+
+#phoneNo::placeholder{
+    color: purple;
+}
+#button{
+    background-color: purple;
+}
+#message{
+    color: purple;
+}

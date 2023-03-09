@@ -12,7 +12,71 @@
 </head>
 <body>
     <div><br/>
-        <h1 class="header text-center text-white">NUMBER CARRIER DETECTOR</h1>
+        <h1 class="header text-center text-white">NETWORK CARRIER DETECTOR</h1>
+        <div class="mx-auto card">
+          <form id="form" class="card-body">
+            <div class="form-floating">
+              <input type="tel" class="form-control" placeholder="phone No" maxlength="11" minlength="11" id="phoneNo" required><br> 
+            </div>
+            <button class="btn text-white" id="button" type="submit">Submit</button>
+          </form>
+          <p id="message" class="card-text p-2"></p>
+        </div>
     </div>
+    <script>
+      const phoneNo = document.getElementById('phoneNo');
+      const button = document.getElementById('button');
+      const form = document.getElementById('form');
+      const message = document.getElementById('message');
+
+      const mtnPrefixes = ["0903", "0803", "0703", "0806", "0706", "0813", "0810", "0814", "0816", "0906", "0913", "0916", "0702", "0704"];
+      const gloPrefixes = ["0805", "0705", "0905", "0807", "0815", "0811", "0905", "0912", "0915"];
+      const etisalatPrefixes = ["0809", "0909", "0817", "0818", "0908"];
+      const airtelPrefixes = ["0802", "0901", "0902", "0701", "0808", "0708", "0812", "0907", "0904"];
+
+      function writeMessage(txt){
+        var i = 0;
+        var txt = txt
+        var speed = 50;
+        typeWriter();
+
+        function typeWriter(){
+          if(i < txt.length){
+            message.innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed)
+          }
+        }
+      }
+
+      function carrierDetector(carrier){
+        writeMessage(`The characters you entered represent ${carrier} network carrier`)
+      }
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        message.innerHTML = ""
+
+        let stringValue = phoneNo.value;
+        let stringValueLength = stringValue.length;
+        let prefix = stringValue.slice(0, 4);
+
+        if(mtnPrefixes.includes(prefix)){
+          return carrierDetector('MTN');
+        }
+        if(gloPrefixes.includes(prefix)){
+          return carrierDetector('GLO');
+        }
+        if(etisalatPrefixes.includes(prefix)){
+          return carrierDetector('9MOBILE');
+        }
+        if(airtelPrefixes.includes(prefix)){
+          return carrierDetector('AIRTEL');
+        }
+
+        return writeMessage("invalid inputs. Your characters are not identified as they don't represent any number carrier according to my opinion. Please try inputting something valid!")
+      })
+    </script>
 </body>
+
 </html>
