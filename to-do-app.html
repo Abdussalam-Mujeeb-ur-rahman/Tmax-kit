@@ -12,7 +12,35 @@
 </head>
 <body>
     <div><br/>
-        <h1 class="header text-center text-white">TO-DO APP</h1>
+        <div class="card mx-auto">
+          <div class="card-header"><h3>TO DO APP</h3> </div>
+          <div class="card-body">
+            <form>
+              <div class="input-group"><input type="text" class="form-control" required><button type="submit" class="btn" id="add">Add</button></div>
+            </form>
+          </div>
+          <div class="card-footer" >
+
+          </div>
+        </div>
     </div>
+    <script>
+      const form = document.querySelector('form');
+      const card_footer = document.querySelector('.card-footer')
+      const form_control = document.querySelector('.form-control')
+      
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        var todo = document.createElement('div');
+        todo.classList.add('alert', 'alert-dismissible', 'fade', 'show');
+        todo.innerHTML = '<button type="button" class="btn-close" data-bs-dismiss="alert" onclick="removeTodo()"></button> ' + form_control.value;
+
+        card_footer.appendChild(todo);
+
+        return form_control.value = ''
+      })
+
+    </script>
 </body>
 </html>

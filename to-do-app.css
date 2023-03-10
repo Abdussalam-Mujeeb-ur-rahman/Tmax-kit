@@ -1,0 +1,10 @@
+.card{
+    max-width: 500px;
+}
+#add{
+    background-color: purple;
+    color: white;
+}
+.alert{
+    background-color: purple;
+}
