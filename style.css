@@ -11,6 +11,8 @@ body {
   margin-bottom: 200px;
 }
 
+
+
 .cardCss, #cardCss {
   background: url("background.png");
   background-size: 300% ;
@@ -27,7 +29,7 @@ body {
 }
 
 
-ion-icon:not(.small) {
+ion-icon:not(.small){
   font-size: 100px;
   color: white;
   transition: all .3s;
@@ -35,6 +37,10 @@ ion-icon:not(.small) {
 
 ion-icon:hover{
   color: lightblue;
+}
+
+.unready > ion-icon{
+  color: red !important;
 }
 
 .col-sm {

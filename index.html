@@ -22,12 +22,12 @@
           <!-- first tools wrapper here -->
         <div class="row">
           <div class="col-sm">
-            <a href="calculator.html"><ion-icon name="calculator-outline"></ion-icon></a>
+            <a class="unready" ><ion-icon name="calculator-outline" ></ion-icon></a>
             <p>Calculator</p>
           </div>
           
           <div class="col-sm">
-            <a href="id-card-creator.html"><ion-icon name="id-card-outline"></ion-icon></a>
+            <a class="unready" ><ion-icon name="id-card-outline"></ion-icon></a>
             <p>Id card creator</p>
           </div>
           <div class="col-sm">
@@ -38,7 +38,7 @@
         <!-- second tool wrapper -->
         <div class="row">
           <div class="col-sm">
-            <a href="tic-tac-toe.html"><ion-icon name="apps-outline"></ion-icon></a>
+            <a class="unready"><ion-icon name="apps-outline"></ion-icon></a>
             <p>Tic tac toe</p>
           </div>
           <div class="col-sm">
@@ -46,7 +46,7 @@
             <p>To-do app</p>
           </div>
           <div class="col-sm">
-            <a href="quiz-app.html"><ion-icon name="help-outline"></ion-icon></a>
+            <a class="unready"><ion-icon name="help-outline" ></ion-icon></a>
             <p>Quiz app</p>
           </div>
         </div>
@@ -144,6 +144,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
+  <script>
+    const unready = document.getElementsByClassName('unready');
+
+    for(let i=0;i<unready.length;i++){
+      unready[i].addEventListener('click', (e) => {
+        alert('We are very sorry. You are unable to access this tool as it is  still under construction!')
+      })
+    }
+  </script>
 </body>
 
 </html>
